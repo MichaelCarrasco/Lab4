@@ -27,7 +27,8 @@ public class Numbers {
 		}
 		Arrays.sort(array);
 		array = Arrays.copyOf(array, array.length + 1); //creates new array with one more element
-	    array[array.length - 1] = 2147483647;
+		int maxValue = Integer.MAX_VALUE;
+	    array[array.length - 1] = maxValue;
 	    for (int i=0;i<length;i++) {
 	    	int nextLargestElement = Larger(array, array[i]); 
 				System.out.println(array[i]+": "+nextLargestElement);
