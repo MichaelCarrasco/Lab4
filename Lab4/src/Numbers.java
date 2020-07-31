@@ -30,9 +30,8 @@ public class Numbers {
 	    array[array.length - 1] = 2147483647;
 	    for (int i=0;i<length;i++) {
 	    	int nextLargestElement = Larger(array, array[i]); 
-			if(nextLargestElement!=0) {
 				System.out.println(array[i]+": "+nextLargestElement);
-			} 
+		
 			
 			
 	    	
